@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+target/
 
 # Log file
 *.log
@@ -24,3 +25,9 @@ hs_err_pid*
 
 # IntelliJ
 .idea/
+
+# Videos
+*.mp4
+
+# MacOS
+.DS_Store
