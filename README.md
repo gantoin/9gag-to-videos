@@ -8,6 +8,6 @@ Check RSS feed → http://9gagrss.com/feed
 
 Filter on type "video"
 
-Compile all video files woth ffmpeg
+Compile all video files with ffmpeg
 
 Upload it on Youtube
