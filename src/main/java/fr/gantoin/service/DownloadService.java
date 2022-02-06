@@ -4,7 +4,6 @@ import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
-import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
@@ -14,8 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DownloadService {
 
-    public String download(String address) throws IOException {
-        String out = "/tmp/" + UUID.randomUUID() + ".mp4";
+    public String download(String title, String address) throws IOException {
+        String out = "/tmp/" + title + ".mp4";
         try (BufferedInputStream inputStream = new BufferedInputStream(new URL(address).openStream());
              FileOutputStream fileOS = new FileOutputStream(out)) {
             byte[] data = new byte[1024];

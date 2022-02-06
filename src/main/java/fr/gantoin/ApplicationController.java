@@ -37,7 +37,7 @@ public class ApplicationController {
                 log.info("Trying to download {} videos", videos.size());
                 videos.forEach(video -> {
                     try {
-                        video.setLocalPath(downloadService.download(video.getUrl()));
+                        video.setLocalPath(downloadService.download(video.getTitle(), video.getUrl()));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
